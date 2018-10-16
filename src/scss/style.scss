@@ -13,6 +13,19 @@ License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 
 @import "./base.scss";
 
+/* Reset Bootstrap */
+.container {
+  width: 1240px;
+}
+
+.dancingfont {
+  font-family: $dancing-font;
+}
+
+h1,h2,h3,h4,h5,p {
+  font-family: $lato-font;
+}
+
 
 /* Navigation */
 
@@ -44,8 +57,8 @@ nav {
   ul {
     li {
       display: inline-block;
-      padding-left: 20px;
-      padding-right: 20px;
+      padding-left: 15px;
+      padding-right: 15px;
       a {
         font-size: 0.8em;
         font-weight: $lato300;
@@ -109,6 +122,75 @@ nav {
   cursor: pointer;
 }
 
+/* Logo Section */
+
+.bt-traverler-logo {
+    padding: 55px 0;
+    text-align: center;
+    img {
+      width: 330px;
+    }
+}
+
+.bt-travelerbdr-btm {
+  border-bottom: 1px solid #f3f0f0;
+}
+
+
+/* Instagram Section */
+
+.bt-traverler-instagram {
+  padding: 55px 0;
+}
+
+.bt-traveler-content {
+  width: 100%;
+  padding-left: 40px;
+  padding-right: 40px;
+  overflow: hidden;
+  .dancingfont {
+    font-size: 1.4em;
+    font-weight: $DancingScript700;
+  }
+  p {
+    font-weight: 300;
+    letter-spacing: 1.4px;
+    line-height: 28px;
+  }
+}
 
 
 /* Responsive CSS */
+
+/* Smaller Laptop Size */
+
+
+@media (max-width: 1200px) {
+  .bt-traverler-menu.primary-menu ul li {
+    display: inline-block;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .bt-traverler-center {
+    width: 70%;
+  }
+}
+
+
+/* Ipad Large Size */
+@media (max-width: 1000px) {
+  .container {
+    width: 100%;
+    max-width: 100%;
+  }
+  .pad-nav-mbl {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .bt-traverler-center {
+      width: 65%;
+  }
+  .bt-traverler-left {
+      width: 17%;
+  }
+}
